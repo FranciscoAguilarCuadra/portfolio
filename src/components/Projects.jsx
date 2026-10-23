@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="container">
         <Reveal className="section-head">
           <p className="eyebrow">02 — Proyectos</p>
-          <h2 className="section-title">Trabajo real, no maquetas</h2>
+          <h2 className="section-title">Trabajo real</h2>
           <p className="section-lead">
             Proyectos en producción, aplicaciones propias y trabajos académicos. Cada uno tiene un
             enlace para verlo funcionando o revisar el código.
