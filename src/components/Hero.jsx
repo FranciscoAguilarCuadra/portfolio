@@ -15,12 +15,16 @@ const Hero = () => {
 
       <div className="container hero-inner">
         <div className="hero-content">
-          <Reveal as="div" className="hero-status">
-            <span className="status-dot" aria-hidden="true" />
-            {profile.availability}
+          <Reveal as="div" className="hero-intro">
+            <span className="hero-status">
+              <span className="status-dot" aria-hidden="true" />
+              {profile.availability}
+            </span>
             <span className="status-sep" aria-hidden="true" />
-            <MapPin size={13} aria-hidden="true" />
-            {profile.location}
+            <span className="hero-location">
+              <MapPin size={13} aria-hidden="true" />
+              {profile.location}
+            </span>
           </Reveal>
 
           <Reveal as="p" className="hero-greeting" delay={60}>
