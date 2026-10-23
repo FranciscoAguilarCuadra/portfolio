@@ -2,6 +2,8 @@
 
 Portfolio personal de **Francisco Aguilar**, Ingeniero Civil Informático y desarrollador web full stack. Construido con React y Vite, con contenido basado en experiencia real: prácticas profesionales, proyectos en producción y formación.
 
+**Demo:** https://francisco-aguilar.vercel.app
+
 ## Stack
 
 - React 18
@@ -50,6 +52,7 @@ src/
 ├── styles/global.css   # tokens, base y utilidades
 ├── App.jsx
 └── main.jsx
+.github/workflows/ci.yml
 ```
 
 ## Editar contenido
@@ -91,6 +94,17 @@ Sin `RESEND_API_KEY`, el endpoint responde `503` y el formulario abre el cliente
 5. Output directory: `dist`.
 6. Configurar las variables del formulario.
 7. Deploy.
+
+El proyecto ya está desplegado en producción en https://francisco-aguilar.vercel.app.
+
+Para conectar el repositorio:
+
+```bash
+git remote add origin https://github.com/FranciscoAguilarCuadra/portfolio.git
+git push -u origin main
+```
+
+Después, en Vercel: **Project → Settings → Git → Connect Git Repository**.
 
 ## Dominio
 

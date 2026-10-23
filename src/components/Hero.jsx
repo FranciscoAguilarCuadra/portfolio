@@ -28,7 +28,7 @@ const Hero = () => {
           </Reveal>
 
           <Reveal as="h1" className="hero-name" delay={100}>
-            Francisco Aguilar<span className="accent-dot">.</span>
+            Francisco Aguilar<span className="accent-dot" aria-hidden="true">.</span>
           </Reveal>
 
           <Reveal as="p" className="hero-role" delay={140}>
