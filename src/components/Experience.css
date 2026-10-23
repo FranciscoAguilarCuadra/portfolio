@@ -1,0 +1,215 @@
+.experience {
+  border-top: 1px solid var(--border);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.column-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.4rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.column-title svg {
+  flex-shrink: 0;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 4px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--border-strong), transparent);
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 1.65rem;
+  left: -1.5rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow:
+    0 0 0 4px var(--bg),
+    0 0 18px rgba(79, 140, 255, 0.65);
+}
+
+.timeline-card {
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition:
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.timeline-card:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+
+.timeline-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.timeline-period {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.timeline-type {
+  padding: 0.18rem 0.5rem;
+  border: 1px solid rgba(79, 140, 255, 0.3);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.timeline-card h4 {
+  margin-bottom: 0.35rem;
+  font-size: 1.18rem;
+}
+
+.timeline-desc {
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.timeline-tasks {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-tasks li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.timeline-tasks li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.8;
+}
+
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.education-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.education-card {
+  position: relative;
+  padding: 1.2rem 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition:
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  opacity: 0.7;
+}
+
+.education-card:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+
+.education-period {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.education-card h4 {
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.education-institution {
+  margin-bottom: 0.35rem;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.education-desc {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://francisco-aguilar.vercel.app/sitemap.xml
