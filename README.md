@@ -45,7 +45,7 @@ public/
 ├── og.png
 ├── robots.txt
 ├── sitemap.xml
-└── assets/projects/    # capturas reales de los proyectos
+└── assets/projects/    # capturas y portadas de los proyectos
 src/
 ├── components/         # Header, Hero, About, Projects, Experience, Contact, Footer
 ├── data/               # perfil, proyectos, experiencia, educación y skills
@@ -65,6 +65,8 @@ Todo el contenido vive en `src/data/`:
 - `skills.js`: habilidades reales y aprendizajes en curso.
 
 Las capturas están en `public/assets/projects/`. Si actualizas una captura, mantén el mismo nombre o cambia la ruta en `projects.js`.
+
+La portada de **App Móviles** es una portada generada. Si tienes una captura real de la app, reemplaza `public/assets/projects/app-moviles.png` por esa imagen (idealmente 1280×800).
 
 ## Formulario de contacto
 
